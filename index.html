@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pequenos Agricultores</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background: #4caf50;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  section.intro h2 {
+    font-size: 1.8rem;
+    color: #1b5e20;
+  }
+  section.intro p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0.75rem auto 0;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(76,175,80,0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(76,175,80,0.3);
+  }
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .product-content {
+    padding: 1rem 1.3rem 1.8rem;
+    text-align: center;
+  }
+  .product-content h3 {
+    margin: 0.7rem 0;
+    color: #388e3c;
+  }
+  .product-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+  }
+  .btn-buy {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  .btn-buy:hover {
+    background-color: #388e3c;
+  }
+  footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive text sizes */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+    section.intro h2 {
+      font-size: 1.3rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Pequenos Agricultores</h1>
+</header>
+<main>
+  <section class="intro">
+    <h2>Produtos fresquinhos direto do campo para você</h2>
+    <p>Somos pequenos agricultores dedicados a cultivar a melhor Jaca, Banana e Soja com sustentabilidade, qualidade e carinho para a sua mesa.</p>
+  </section>
+  <section class="products">
+    <article class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2GEeaE4KbQBxnpBoI4ySBZNm_twwz7BpbUg&s" alt="Jaca fresca" class="product-image" />
+      <div class="product-content">
+        <h3>Jaca</h3>
+        <p>Deliciosas jacas maduras e suculentas, colhidas com cuidado para você aproveitar o melhor do sabor tropical.</p>
+        <button class="btn-buy" onclick="alert('Obrigado pelo interesse na Jaca! Entre em contato para comprar.')">Comprar</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkAC7ipdfQMVP5aSlq68D6ht3cbPV8HfKMg&s" alt="Banana madura" class="product-image" />
+      <div class="product-content">
+        <h3>Banana</h3>
+        <p>Bananas naturalmente doces e nutritivas, perfeitas para lanches, vitaminas e receitas diversas.</p>
+        <button class="btn-buy" onclick="alert('Obrigado pelo interesse na Banana! Entre em contato para comprar.')">Comprar</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://d26lpennugtm8s.cloudfront.net/stores/001/007/019/rte/4-motivos-para-voce-iniciar-uma-plantacao-de-soja-7mboots.jpg" alt="Soja plantada" class="product-image" />
+      <div class="product-content">
+        <h3>Soja</h3>
+        <p>Soja de alta qualidade, cultivada com técnicas responsáveis para uso alimentar e industrial sustentável.</p>
+        <button class="btn-buy" onclick="alert('Obrigado pelo interesse na Soja! Entre em contato para comprar.')">Comprar</button>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <p>Contato de Agrinho: agrinho@senarp.org.br | Telefone: (41)2106-0429</p>
+  <p> redes sociais: | WhatsApp:55 (41)3324-3800</p>
+</footer>
+</body>
+</html>
